@@ -1,0 +1,47 @@
+.vistas{
+    display: flex;
+    justify-content: flex-end;
+}
+
+.box-vistas{
+    margin-top: 2rem;
+}
+
+.box-paginacion{
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    gap: 1rem;
+}
+
+@media(max-width: 448px) {
+    .box-paginacion{
+        flex-direction: column;
+        justify-content: center;
+    }
+}
+
+.box-paginacion--texto{
+    display: flex;
+    align-items: center;
+    gap: .5rem;
+}
+
+.box-paginacion--texto p{
+    font-size: 0.8rem;
+    flex: 2;
+    margin: 0;
+}
+
+.box-paginacion--texto input[type="number"]{
+    flex: 1;
+    background-color: transparent;
+    border: none;
+    border-bottom: 1px solid rgb(50, 54, 61);
+    text-align: center;
+    padding: 0;
+}
+
+.box-paginacion--texto input[type="number"]:focus-visible{
+    outline: none;
+}

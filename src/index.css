@@ -1,0 +1,222 @@
+h1, h2, h3{
+    font-family: 'Open Sans', sans-serif;
+}
+
+a,p{
+    font-family: 'Open Sans', sans-serif;
+}
+
+.contenedor{
+    width: 90%;
+    margin: 2rem auto;
+    padding: 1.5rem;
+}
+
+.login{
+    width: 60%;
+}
+
+.contenedor-heading{
+    text-align: center;
+    margin-bottom: 2.5rem;
+}
+
+.contenedor-heading h1{
+    font-size: 4rem;
+    font-family: 'Kanit', sans-serif;
+    font-weight: 800;
+    margin: 1.5rem 0;
+}
+
+.contenedor-heading h1 span{
+    font-size: 5rem;
+    font-family: 'Kanit', sans-serif;
+    font-weight: 900;
+    font-style: italic;
+    color: rgb(50, 54, 61);
+}
+
+@media(max-width: 448px) {
+    .contenedor-heading h1{
+        font-size: 3rem;
+    }
+    .contenedor-heading h1 span{
+        font-size: 4rem;
+    }
+}
+
+.contenedor-heading p{
+    margin: 0;
+    color: rgb(173, 173, 173);
+    font-weight: 600;
+}
+
+@media(max-width: 448px) {
+    .login{
+        width: 80%;
+    }
+}
+
+.contenedor-sppinner{
+    align-items: center;
+    display: flex;
+    height: 100%;
+    justify-content: center;
+    position: fixed;
+    width: 100%;
+    flex-direction: column;
+}
+
+@media(max-width: 448px) {
+    .contenedor{
+        width: 87%;
+    }
+}
+
+.heading{
+    font-size: 2.5rem;
+    font-weight: 800;
+    text-align: center;
+    text-transform: uppercase;
+    color: rgb(50, 54, 61);
+}
+
+
+@media(max-width: 448px) {
+  .menuVisible{
+      transform: translateY(0);
+  }
+}
+@media(max-width: 448px) {
+  .menuOculto{
+      transform: translateY(10rem);
+  }
+}
+
+/* Personalizar la barra de desplazamiento para navegadores WebKit */
+/* Ancho y color de la barra */
+::-webkit-scrollbar {
+    width: .5rem;
+    height: .5rem;
+    background-color: transparent;
+}
+  
+/* Estilos del "pulgar" de la barra de desplazamiento (la parte que se arrastra) */
+::-webkit-scrollbar-thumb {
+    background-color: #888;
+    border-radius: 5px;
+}
+  
+  /* Estilos de la parte superior e inferior de la barra de desplazamiento */
+::-webkit-scrollbar-track {
+    background-color: transparent;
+}
+  
+/* Estilos del "pulgar" al estar sobre él */
+::-webkit-scrollbar-thumb:hover {
+    background-color: #555;
+}
+
+.dot-spinner {
+    --uib-size: 40px;
+    --uib-speed: .9s;
+    --uib-color: black;
+  
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    height: var(--uib-size);
+    width: var(--uib-size);
+}
+  
+.dot-spinner__dot {
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    height: 100%;
+    width: 100%;
+}
+  
+.dot-spinner__dot::before {
+    content: '';
+    height: 20%;
+    width: 20%;
+    border-radius: 50%;
+    background-color: var(--uib-color);
+    transform: scale(0);
+    opacity: 0.5;
+    animation: pulse calc(var(--uib-speed) * 1.111) ease-in-out infinite;
+}
+  
+.dot-spinner__dot:nth-child(2) {
+    transform: rotate(45deg);
+}
+  
+.dot-spinner__dot:nth-child(2)::before {
+    animation-delay: calc(var(--uib-speed) * -0.875);
+}
+  
+.dot-spinner__dot:nth-child(3) {
+    transform: rotate(90deg);
+}
+  
+.dot-spinner__dot:nth-child(3)::before {
+    animation-delay: calc(var(--uib-speed) * -0.75);
+}
+  
+.dot-spinner__dot:nth-child(4) {
+    transform: rotate(135deg);
+}
+  
+.dot-spinner__dot:nth-child(4)::before {
+    animation-delay: calc(var(--uib-speed) * -0.625);
+}
+  
+.dot-spinner__dot:nth-child(5) {
+    transform: rotate(180deg);
+}
+  
+.dot-spinner__dot:nth-child(5)::before {
+    animation-delay: calc(var(--uib-speed) * -0.5);
+}
+  
+.dot-spinner__dot:nth-child(6) {
+    transform: rotate(225deg);
+}
+  
+.dot-spinner__dot:nth-child(6)::before {
+    animation-delay: calc(var(--uib-speed) * -0.375);
+}
+  
+.dot-spinner__dot:nth-child(7) {
+    transform: rotate(270deg);
+}
+  
+.dot-spinner__dot:nth-child(7)::before {
+    animation-delay: calc(var(--uib-speed) * -0.25);
+}
+  
+.dot-spinner__dot:nth-child(8) {
+    transform: rotate(315deg);
+}
+  
+.dot-spinner__dot:nth-child(8)::before {
+    animation-delay: calc(var(--uib-speed) * -0.125);
+}
+  
+@keyframes pulse {
+    0%,
+    100% {
+        transform: scale(0);
+        opacity: 0.5;
+    }
+
+    50% {
+        transform: scale(1);
+        opacity: 1;
+    }
+}

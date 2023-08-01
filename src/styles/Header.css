@@ -1,0 +1,94 @@
+header{
+    padding: 1rem;
+    margin: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: white;
+}
+
+.navegacion-login{
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+}
+
+.contenedor_logo .logo{
+    font-size: 2.5rem;
+    font-family: 'Kanit', sans-serif;
+    font-weight: 800;
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    color: white;
+    transition: all .2ms linear;
+}
+
+.contenedor_logo .logo span{
+    font-size: 3.5rem;
+    font-family: 'Kanit', sans-serif;
+    font-weight: 900;
+    font-style: italic;
+    color: rgb(225, 225, 225);
+}
+
+
+.navegacion .menu{
+    list-style: none;
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+    justify-content: space-around;
+}
+
+.enlace{
+    text-decoration: none;
+    color: white;
+    font-weight: 600;
+    font-size: 1rem;
+    display: flex;
+    align-items: center;
+    gap: .5rem;
+}
+
+@media(max-width: 448px) {
+    .navegacion{
+        transition: all .2s linear;
+        position: fixed;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        background-color: rgb(50, 54, 61);
+        padding: .7rem;
+        z-index: 1;
+    }
+
+    .navegacion .menu{
+        justify-content: space-evenly;
+        gap: 0;
+        padding: 0;
+        margin: 0;
+    }
+
+    .enlace{
+        flex-direction: column;
+        padding: .5rem 1rem;
+        border-radius: .5rem;
+    }
+    .enlace:hover, .enlace-activo{
+        background-color: rgb(70, 75, 85); 
+    }
+
+}
+
+@media (prefers-color-scheme: dark){
+    header{
+        background-color: rgb(50, 54, 61);
+    }
+}
+
+@media(max-width: 448px) {
+    .option div:nth-child(3){
+        top: 669px !important;
+    }
+}

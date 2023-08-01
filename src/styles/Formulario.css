@@ -1,0 +1,178 @@
+.formulario{
+    background-color: rgb(225, 225, 225);
+    padding: 2rem;
+    border-radius: 1rem;
+    color: rgb(83, 83, 83);
+}
+
+.formulario .fieldset{
+    padding: 1rem;
+    font-family: 'Open Sans', sans-serif;
+    margin-bottom: 2rem;
+    border: 1px solid rgb(50, 54, 61);
+    border-radius: .3rem;
+}
+
+.formulario .fieldset .legend{
+    font-weight: 600;
+}
+
+.campo{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 1rem 0;
+}
+
+.campo .labels{
+    flex: 1;
+    font-weight: 700;
+}
+
+.campo input[type="date"]{
+    flex: 2;
+    background-color: transparent;
+    border: none;
+    border-bottom: 1px solid rgb(131, 131, 131);
+    padding: 1rem 2rem;
+    cursor: pointer;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.campo input[type="date"]:focus-visible{
+    outline: none;
+}
+
+.campo div{
+    flex: 2;
+}
+
+@media(max-width: 448px) {
+    .campo, .capo-2{
+        flex-direction: column;
+        gap: 1.5rem;
+    }
+
+    .campo label{
+        width: 100%;
+        text-align: left;
+    }
+
+    .campo div{
+        width: 100%;
+    }
+
+    .campo .radios{
+        width: 80%;
+    }
+    .formulario .fieldset .legend{
+        font-size: 1rem;
+    }
+}
+
+.btnEnviar{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    font-size: 1.5rem;
+    font-weight: 700 !important;
+}
+
+.radios{
+    justify-self: start;
+    gap: 1rem;
+}
+
+@media(max-width: 448px) {
+    .radios{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 2rem;
+    }
+    
+}
+
+.radio-b, .radio-a, .radio-m, .radio-n, .radio-p, .radio-l, .radio-r, .radio-az, .radio-v, .radio-am{
+    padding: .7rem;
+    gap: .5rem;
+    border-radius: .5rem;
+    margin: 0 !important;
+}
+
+@media(max-width: 448px) {
+    .radio-b, .radio-a, .radio-m, .radio-n, .radio-p, .radio-l,.radio-r, .radio-az, .radio-v, .radio-am{
+        margin: 0 !important;
+        justify-content: space-between;
+    }
+}
+
+.radio-b{
+    background-color: rgb(96, 59, 44);
+}
+
+.radio-a{
+    background-color: rgb(110, 54, 48);
+}
+
+.radio-m{
+    background-color: rgb(137, 99, 42);
+}
+
+.radio-n{
+    background-color: rgb(55, 55, 55);
+}
+
+.radio-p{
+    background-color: rgb(40, 69, 108);
+}
+
+.radio-l{
+    background-color: rgb(43, 89, 63);
+}
+
+.radio-r{
+ background-color: rgb(205, 73, 69);
+}
+
+.radio-az{
+    background-color: rgb(46, 124, 209);
+}
+
+.radio-v{
+    background-color: rgb(45, 153, 100);
+}
+
+.radio-am{
+    background-color: rgb(202, 142, 27);
+}
+
+.radio-b span:first-of-type, .radio-m span:first-of-type, .radio-a span:first-of-type,
+.radio-n span:first-of-type, .radio-p span:first-of-type, .radio-l span:first-of-type,
+.radio-r span:first-of-type, .radio-az span:first-of-type, .radio-v span:first-of-type, .radio-am span:first-of-type{
+    padding: 0;
+    color: rgb(177, 177, 177);
+}
+
+.radio-b span:last-of-type, .radio-m span:last-of-type, .radio-a span:last-of-type,
+.radio-n span:last-of-type, .radio-p span:last-of-type, .radio-l span:last-of-type,
+.radio-r span:last-of-type, .radio-az span:last-of-type, .radio-v span:last-of-type, .radio-am span:last-of-type{
+    color: white;
+    font-size: 14px;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 600;
+}
+
+.item{
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+    justify-content: space-between !important;
+}
+
+.select div{
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+}

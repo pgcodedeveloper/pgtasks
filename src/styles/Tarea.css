@@ -1,0 +1,137 @@
+
+.card{
+    
+    padding: 1rem;
+    text-align: center;
+}
+
+.card button{
+    height: 100%;
+}
+
+.card button div:nth-child(2) div{
+    font-size: 1.2rem;
+    font-weight: 600;
+    font-family: 'Open Sans', sans-serif;
+}
+
+@media(min-width: 1240px) {
+    .card button div:nth-child(2) div{
+        font-size: 1.5rem;
+    }
+}
+
+.icono_tarea{
+    display: flex !important;
+    align-items: center;
+    justify-content: center;
+    height: 4rem;
+    font-size: 3rem;
+}
+.rojo i{
+    color: rgb(205, 73, 69)
+}
+
+.azul i{
+    color: rgb(46, 124, 209);
+}
+
+.amarillo i{
+    color: rgb(202, 142, 27);
+}
+
+.verde i{   
+    color: rgb(45, 153, 100);
+}
+.listado_tareas{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1.5rem;
+}
+
+@media(max-width: 448px) {
+    .listado_tareas{
+        grid-template-columns: repeat(1, 1fr);
+    }
+}
+@media(min-width: 998px) {
+    .listado_tareas{
+        grid-template-columns: repeat(3,1fr);
+    }
+}
+
+@media(min-width: 1281px) {
+    .listado_tareas{
+        grid-template-columns: repeat(5,1fr);
+    }
+}
+
+
+@media(max-width: 448px) {
+    .tabla{
+        min-width: 780px !important;
+    }
+}
+
+@media(min-width: 768px) {
+    .tabla{
+        min-width: 100%;
+    }
+
+}
+
+.tabla thead{
+    background-color: rgb(50, 54, 61);
+}
+
+.tabla thead tr th{
+    color: white;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 700;
+}
+
+.rows div{
+    display: flex;
+    align-items: center;
+    gap: .5rem;
+    font-weight: 700;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.row-accion{
+    display: flex;
+    align-items: center;
+    gap: .2rem;
+}
+
+.row-accion i{
+    color: rgb(46, 124, 209);
+    padding: .5rem;
+    display: flex;
+    width: max-content;
+    justify-content: center;
+    align-items: center;
+}
+
+.row-accion i:nth-child(2){
+    color: rgb(205, 73, 69);
+}
+
+.row-accion i:hover{
+    cursor: pointer;
+    background-color: rgb(228, 228, 228);
+    border-radius: .5rem;
+}
+
+tr td{
+    font-family: 'Open Sans', sans-serif !important;
+}
+td span{
+    font-family: 'Open Sans', sans-serif;
+    padding: .5rem;
+    color: white;
+    border-radius: .5rem;
+    text-transform: capitalize;
+    font-weight: 700;
+    font-size: 0.8rem;
+}

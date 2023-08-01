@@ -1,0 +1,127 @@
+.campos{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 1.5rem;
+}
+.campo-2{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    padding: 0;
+}
+
+@media(max-width: 448px) {
+    .campo-2{
+        flex-direction: column;
+        gap: .5rem;
+    }
+
+    .campo-2 .label{
+        width: 100%;
+        text-align: left;
+    }
+
+    .campo-2 .campo-input{
+        width: 100%;
+    }
+}
+
+.campo-2 .label{
+    flex: 1;
+    font-weight: 600;
+}
+
+.campo-2 .campo-input{
+    flex: 2;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.campo-2 .campo-input i{
+    padding: .5rem 1rem;
+    background-color: rgb(50, 54, 61);
+    color: white;
+    border-top-left-radius: 2rem;
+    border-bottom-left-radius: 2rem;
+}
+
+.campo-2 .campo-input .input{
+    flex: 3;
+    font-weight: 500;
+    color: rgb(83, 83, 83);
+    border: none;
+    padding: .5rem 1rem;
+    background-color: rgb(255, 255, 255);
+    border-top-right-radius: 2rem;
+    border-bottom-right-radius: 2rem;
+}
+
+.campo-2 .input::placeholder {
+    color: rgb(173, 173, 173);
+}
+
+.input:focus-visible{
+    outline: none;
+}
+
+.campo-2 .label,.input{
+    font-family: 'Kanit', sans-serif;
+}
+
+.contenedor-botones{
+    margin-top: 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+@media(max-width: 448px) {
+    .contenedor-botones{
+        flex-direction: column;
+        gap: .5rem;
+    }
+}
+
+.contenedor-botones button:first-of-type{
+    font-family: 'Kanit', sans-serif;
+    font-size: 700;
+    font-size: 1rem;
+}
+
+.contenedor-botones button:last-of-type{
+    background-color: rgb(220, 80, 63);
+    font-family: 'Kanit', sans-serif;
+    font-size: 700;
+    font-size: 1rem;
+    display: flex;
+    align-items: center;
+    gap: .5rem;
+}
+
+
+@media(max-width: 448px) {
+    .contenedor-botones button {
+        width: 100%;
+    }
+}
+
+.acciones{
+    margin-top: 1.5rem;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.acciones a{
+    color: rgb(173, 173, 173);
+    font-family: 'Kanit', sans-serif;
+    text-decoration: none;
+    transition: all .2s linear;
+}
+
+.acciones a:hover{
+    color: rgb(50, 54, 61);
+}
